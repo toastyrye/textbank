@@ -2,7 +2,7 @@ import subprocess
 import csv
 
 
-with open('/Users/asaflebovic/Documents/contacts.csv') as f:
+with open('/contacts.csv') as f:
     reader = csv.reader(f)
     data = list(reader)
 
