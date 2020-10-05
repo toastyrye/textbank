@@ -5,7 +5,7 @@ import requests
 onlinecontacts = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/contacts.csv').text
 bashfile = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/messagesapp.sh').text
 
-with open(onlinecontacts) as f:
+with onlinecontacts as f:
     reader = csv.reader(f)
     data = list(reader)
 
