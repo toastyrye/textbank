@@ -2,7 +2,7 @@ import subprocess
 import csv
 
 
-with open('/contacts.csv') as f:
+with open('https://raw.githubusercontent.com/alebovic/textbank/master/contacts.csv') as f:
     reader = csv.reader(f)
     data = list(reader)
 
@@ -16,7 +16,7 @@ for i in data:
         count+=1
         comp = 100*count/(tot+1)
         int(i[1])
-        rc = subprocess.check_call(["/messagesapp.sh",i[1],"Hello, {name}! You have been bulk texted.".format(i[0])])
+        rc = subprocess.check_call(["https://raw.githubusercontent.com/alebovic/textbank/master/messagesapp.sh",i[1],"Hello, {name}! You have been bulk texted.".format(i[0])])
         print(str(comp) + "% COMPLETE (" + str(count) + "/" + str(tot+1) + ")")
     except:
         count+=1
