@@ -5,9 +5,11 @@ import requests
 
 bashfile = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/messagesapp.sh').text
 
-with open(raw_input('Drop CSV file! '), 'r') as f:
+'''with open(raw_input('Drop CSV file! '), 'r') as f:
     reader = csv.reader(f)
-    data = list(reader)
+    data = list(reader)'''
+
+data = [[2673472677, "Asaf"]]
 
 print(data)
 
