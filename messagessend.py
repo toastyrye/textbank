@@ -1,11 +1,11 @@
+
 import subprocess
 import csv
 import requests
 
-onlinecontacts = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/contacts.csv').text
 bashfile = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/messagesapp.sh').text
 
-with onlinecontacts as f:
+with open(raw_input('Drop CSV file! '), 'r') as f:
     reader = csv.reader(f)
     data = list(reader)
 
