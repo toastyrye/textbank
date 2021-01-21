@@ -28,5 +28,5 @@ for i in data:
         subprocess.run(["osascript", "sendMessage.applescript", phone_number, message])
         print("Texted " + contact_name + " at number " + phone_number)
     except:
-        print(f"Failed to text " + contact_name + " at number " + phone_number)
+        print("Failed to text " + contact_name + " at number " + phone_number)
 
