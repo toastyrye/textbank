@@ -6,6 +6,7 @@ A textbanking tool for mac using bash
 1. Open Terminal app on mac
 
 2. Run commands one by one
+
 .. code-block::
 
         cd ~
@@ -15,7 +16,7 @@ A textbanking tool for mac using bash
         sudo easy_install pip
         pip --version
         pip install virtualenv
-        virtualenv env
+        python -m virtualenv env
         source env/bin/activate
         pip install -r requirements.txt
         python messagessend.py
