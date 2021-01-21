@@ -25,7 +25,6 @@ Update
 
 .. code-block::
         
-        chmod +x update.sh
-        ./update.sh
+        chmod +x update.sh && ./update.sh
    
 We will have to change the contacts csv to make it actually text real people not just riley
