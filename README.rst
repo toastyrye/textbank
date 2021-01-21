@@ -1,9 +1,11 @@
-# textbank
+Mac Textbank
+============
+
 A textbanking tool for mac using bash and python
 
 Open Terminal app on mac
 
-.. code-block:::
+.. code-block::
 
         cd ~
         git clone https://github.com/toastyrye/textbank
