@@ -13,7 +13,7 @@ with open(filename, 'r') as f:
 
 print(data)
 print("Message body: " + message_body)
-input("Proceed? (ctrl-c if not)")
+rawinput("Proceed? (enter to continue, ctrl-c to stop)")
 
 for i in data:
     if i[0] == "Name":
