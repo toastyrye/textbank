@@ -3,6 +3,10 @@ Mac Textbank
 
 A textbanking tool for mac using bash
 
+
+Install
+-------
+
 1. Open Terminal app on mac
 
 2. Run commands one by one
@@ -24,4 +28,13 @@ A textbanking tool for mac using bash
 
 3. Check if messages sent
 
+Update
+------
+
+.. code-block::
+        
+        git pull
+        python messagessend.py
+   
+   
 We will have to change the contacts csv to make it actually text real people not just riley
