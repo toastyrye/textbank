@@ -1,28 +1,30 @@
-
 import subprocess
 import csv
-import requests
+import time
 
-bashfile = requests.get('https://raw.githubusercontent.com/alebovic/textbank/master/messagesapp.sh').text
+filename="contacts.csv"
+message_body = "This is Alex w/ Sunrise San Diego. This Friday (1/22), we’re hosting a Green New Decade livestream (bit.ly/SDGNDecade) about our city government, where they’ve historically failed, and how we want to see them do better! As far as accessibiliy, we will have an ASL interpreter, captions, and a break in the middle. Will you join us at 6-8PM Pacific?"
 
-'''with open(raw_input('Drop CSV file! '), 'r') as f:
+with open(filename, 'r') as f:
     reader = csv.reader(f)
-    data = list(reader)'''
-
-data = [[2673472677, "Asaf"]]
+    data = list(reader)
 
 print(data)
-
-count = 0
-tot = len(data)
+print("Message body: " + message_body)
+input("Proceed? (ctrl-c if not)")
 
 for i in data:
+    if i[0] == "Name":
+        continue
+
+    time.sleep(1)
+    
     try:
-        count+=1
-        comp = 100*count/(tot+1)
-        int(i[1])
-        rc = subprocess.check_call([bashfile,i[1],"Hello, {name}! You have been bulk texted.".format(i[0])])
-        print(str(comp) + "% COMPLETE (" + str(count) + "/" + str(tot+1) + ")")
+        phone_number = i[1]
+        contact_name = i[0]
+        message = f"Hi {contact_name}!" + message_body
+        subprocess.run(["osascript", "sendMessage.applescript", phone_number, message])
+        print(f"Texted {contact_name} at number {phone_number}")
     except:
-        count+=1
-        x = 0
+        print(f"Failed to text {contact_name} at number {phone_number}")
+
