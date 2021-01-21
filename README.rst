@@ -12,7 +12,7 @@ A textbanking tool for mac using bash
         git clone https://github.com/toastyrye/textbank
         cd textbank
         python --version
-        sudo easy_intall pip
+        sudo easy_install pip
         pip --version
         pip install virtualenv
         virtualenv env
