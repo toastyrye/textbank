@@ -1,4 +1,3 @@
-cd ~
 git clone https://github.com/toastyrye/textbank
 cd textbank
 python --version
