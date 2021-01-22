@@ -23,8 +23,8 @@ Install
 Run
 ---
 
-1. Edit messagessend.py with new message body.
-2. Edit contacts.csv with textbank contacts (always good to test on yourself first).
+1. Edit messagessend.py with new message body
+2. Edit contacts.csv with textbank contacts (always good to test on yourself first)
 3. Run script
 
 .. code-block::
