@@ -28,3 +28,8 @@ Update
         chmod +x update.sh && ./update.sh
    
 We will have to change the contacts csv to make it actually text real people not just riley
+
+Fixes
+-----
+
+ - https://apple.stackexchange.com/questions/198223/how-do-i-send-text-messages-to-non-iphone-owners-using-the-imessage-app-on-a-mac
