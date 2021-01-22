@@ -14,6 +14,7 @@ Install
 
         cd ~
         git clone https://github.com/toastyrye/textbank
+        cd textbank 
         chmod +x install.sh
         sudo ./install.sh
 
