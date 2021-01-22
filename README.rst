@@ -29,6 +29,17 @@ Update
    
 We will have to change the contacts csv to make it actually text real people not just riley
 
+Run
+---
+
+1. Edit messagessend.py with new message body.
+2. Edit contacts.csv with textbank contacts (always good to test on yourself first).
+3. Run script
+
+.. code-block::
+
+        python messagessend.py
+
 Fixes
 -----
 
