@@ -19,7 +19,7 @@ for i in data:
     if i[0] == "Name":
         continue
 
-    time.sleep(10)
+    time.sleep(5)
     
     try:
         phone_number = i[1]
