@@ -28,5 +28,5 @@ for i in data:
         out = check_output(["osascript", "sendMessage.applescript", phone_number, message])
         print("Texted " + contact_name + " at number " + phone_number)
     except:
-        print(out+"\nFailed to text " + contact_name + " at number " + phone_number)
+        print("Failed to text " + contact_name + " at number " + phone_number)
 
