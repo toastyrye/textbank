@@ -20,15 +20,6 @@ Install
 
 3. Check if messages sent
 
-Update
-------
-
-.. code-block::
-        
-        chmod +x update.sh && ./update.sh
-   
-We will have to change the contacts csv to make it actually text real people not just riley
-
 Run
 ---
 
@@ -39,6 +30,16 @@ Run
 .. code-block::
 
         python messagessend.py
+
+
+Update
+------
+
+In case we make changes and you would like to update the app, run the following.
+
+.. code-block::
+        
+        chmod +x update.sh && ./update.sh
 
 Fixes
 -----
