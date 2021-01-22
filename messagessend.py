@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import subprocess
+from subprocess import check_output
 import csv
 import time
 
@@ -25,8 +25,8 @@ for i in data:
         phone_number = i[1]
         contact_name = i[0]
         message = "Hi " + contact_name +"! " + message_body
-        subprocess.run(["osascript", "sendMessage.applescript", phone_number, message])
+        out = check_output(["osascript", "sendMessage.applescript", phone_number, message])
         print("Texted " + contact_name + " at number " + phone_number)
     except:
-        print("Failed to text " + contact_name + " at number " + phone_number)
+        print(out+"\nFailed to text " + contact_name + " at number " + phone_number)
 
