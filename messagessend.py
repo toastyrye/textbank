@@ -18,14 +18,13 @@ raw_input("Proceed? (enter to continue, ctrl-c to stop)")
 for i in data:
     if i[0] == "Name":
         continue
-
-    time.sleep(10)
-    
+        
     try:
         phone_number = i[1]
         contact_name = i[0]
         message = "Hi " + contact_name +"! " + message_body
         out = check_output(["osascript", "sendMessage.applescript", phone_number, message])
+        time.sleep(10)
         print("Texted " + contact_name + " at number " + phone_number)
     except:
         print("Failed to text " + contact_name + " at number " + phone_number)
