@@ -23,7 +23,7 @@ Install
 Run
 ---
 
-1. Edit messagessend.py with new message body (might want to change time.sleep() as well if your computer isn't 8 years old like mine)
+1. Edit messagessend.py with new message body (best to not mess with time.sleep() even if you have a faster laptop)
 2. Edit contacts.csv with textbank contacts (always good to test on yourself or a small group first)
 3. Run script
 
@@ -31,7 +31,7 @@ Run
 
         python messagessend.py
 
-4. Sit back and watch the messages fly
+4. Sit back and watch the messages fly (best to not touch the computer while it's sending)
 
 Update
 ------
