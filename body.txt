@@ -1,0 +1,2 @@
+Hi {name}! This is an example of a text message you can send! All occurrences of "{name}" will be replaced with the
+recipient's name.
