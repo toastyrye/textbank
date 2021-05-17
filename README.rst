@@ -7,42 +7,43 @@ A textbanking tool for mac using bash and python
 Install
 -------
 
-1. Open Terminal app on mac
-2. Run commands one by one
+1. Press **⌘ + Space**, type in "System Preferences" and press **Enter**.
+2. Click on "Security and Privacy"
+3. Click the lock at the bottom-left of the window.
+4. In the pop-up, enter the password for your Mac account.
+5. Under "Allow the apps below to control your computer", locate "Terminal" and check the box to its left.
+6. Click the lock at the bottom left again.
+7. Close the window.
+8. Press **⌘ + Space**, type in "Terminal", and press **Enter**.
+9. Copy the following, paste it in the terminal and then press **Enter**:
 
 .. code-block::
 
-        cd ~
-        git clone https://github.com/toastyrye/textbank
-        cd textbank 
-        chmod +x install.sh
-        sudo ./install.sh
+    curl -O https://raw.githubusercontent.com/toastyrye/textbank/master/install.sh && bash install.sh && rm install.sh && source ~/.bash_profile
 
-3. Type your user password for your mac account
+Prepare
+-------
+
+1. Press **⌘ + Space**, type in "Finder", and press **Enter**.
+2. Press **⌘ + Shift + H**, and navigate to the folder named "textbank".
+3. In the textbank folder, edit body.txt with the body of the texts you want to send. You can put {name} wherever you
+   want to have the recipient's name appear in the text.
+4. In the textbank folder, edit contacts.csv with who you want to text (always good to test on yourself or a small group
+   first).
 
 Run
 ---
 
-1. Edit messagessend.py with new message body (best to not mess with time.sleep() even if you have a faster laptop)
-2. Edit contacts.csv with textbank contacts (always good to test on yourself or a small group first)
-3. Run script
-
-.. code-block::
-
-        python messagessend.py
-
-4. Sit back and watch the messages fly (best to not touch the computer while it's sending)
+1. Press **⌘ + Space**, type in "Messages", and press **Enter** (you can skip this step if the Messages App is already
+   open).
+2. Press **⌘ + Space**, type in "Terminal", and press **Enter**.
+3. In the terminal, type "textbank" (without quotes) and press **Enter**.
+4. Sit back and watch the messages fly (best to not touch the computer while it's sending).
 
 Update
 ------
 
-In case we make changes and you would like to update the app, run the following commands.
-
-.. code-block::
-
-        cd ~/textbank/ && chmod +x update.sh && ./update.sh
-
-Then run the textbank bot as usual.
+In case we make changes and you would like to update the app, rerun steps 8 and 9 under `Install`_.
 
 Fixes
 -----

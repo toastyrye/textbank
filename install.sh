@@ -1,8 +1,17 @@
+#!/usr/bin/env bash
+
+cd
+mkdir -p textbank
 cd textbank
-python --version
-easy_install pip
-pip --version
-pip install virtualenv
-python -m virtualenv env
-source env/bin/activate
-pip install -r requirements.txt
+curl -O https://raw.githubusercontent.com/toastyrye/textbank/master/messagessend.py
+curl -O https://raw.githubusercontent.com/toastyrye/textbank/master/sendMessage.applescript
+curl -O https://raw.githubusercontent.com/toastyrye/textbank/master/body.txt
+curl -O https://raw.githubusercontent.com/toastyrye/textbank/master/contacts.csv
+
+if ! command -v textbank &> /dev/null; then
+    cat <<EOF >> ~/.bash_profile
+textbank() {(
+    cd ~/textbank && python messagessend.py
+)}
+EOF
+fi
