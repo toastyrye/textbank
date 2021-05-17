@@ -25,7 +25,7 @@ Prepare
 -------
 
 1. Press **⌘ + Space**, type in "Finder", and press **Enter**.
-2. Press **⌘ + Shift + Space**, and navigate to the folder named "textbank".
+2. Press **⌘ + Shift + H**, and navigate to the folder named "textbank".
 3. In the textbank folder, edit body.txt with the body of the texts you want to send. You can put {name} wherever you
    want to have the recipient's name appear in the text.
 4. In the textbank folder, edit contacts.csv with who you want to text (always good to test on yourself or a small group
@@ -43,13 +43,7 @@ Run
 Update
 ------
 
-In case we make changes and you would like to update the app, run the following commands.
-
-.. code-block::
-
-        cd ~/textbank/ && chmod +x update.sh && ./update.sh
-
-Then run the textbank bot as usual.
+In case we make changes and you would like to update the app, rerun steps 8 and 9 under `Install`_.
 
 Fixes
 -----
